@@ -1,0 +1,60 @@
+<div class="container mt-5">
+    <div class="d-flex justify-content-center">
+        <div class="w-25">
+            <div class="mb-3 d-flex align-items-center">
+                <input type="text" class="form-control text-center" [value]="resultado" readonly>
+            </div>
+            <div class="row">
+                <button class="btn btn-primary col-3 mb-2" (click)="borrar()">c</button>
+                <button class="btn btn-primary col-3 mb-2" (click)="borrarUno()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace" viewBox="0 0 16 16">
+                        <path d="M5.83 5.146a.5.5 0 0 0 0 .708L7.975 8l-2.147 2.146a.5.5 0 0 0 .707.708l2.147-2.147 2.146 2.147a.5.5 0 0 0 .707-.708L9.39 8l2.146-2.146a.5.5 0 0 0-.707-.708L8.683 7.293 6.536 5.146a.5.5 0 0 0-.707 0z"/>
+                        <path d="M13.683 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7.08a2 2 0 0 1-1.519-.698L.241 8.65a1 1 0 0 1 0-1.302L5.084 1.7A2 2 0 0 1 6.603 1zm-7.08 1a1 1 0 0 0-.76.35L1 8l4.844 5.65a1 1 0 0 0 .759.35h7.08a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"/>
+                    </svg>
+                </button>
+                <button class="btn btn-primary col-3 mb-2" (click)="escribir($event)" value="!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-lg" viewBox="0 0 16 16">
+                        <path d="M7.005 3.1a1 1 0 1 1 1.99 0l-.388 6.35a.61.61 0 0 1-1.214 0zM7 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0"/>
+                    </svg>
+                </button>
+                <button class="btn btn-primary col-3 mb-2" (click)="escribir($event)" value="/">÷</button>
+                <button class="btn btn-primary col-3 mb-2" (click)="escribir($event)" value="7">7</button>
+                <button class="btn btn-primary col-3 mb-2" (click)="escribir($event)" value="8">8</button>
+                <button class="btn btn-primary col-3 mb-2" (click)="escribir($event)" value="9">9</button>
+                <button class="btn btn-primary col-3 mb-2" (click)="escribir($event)" value="x">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                </button>
+                <button class="btn btn-primary col-3 mb-2" (click)="escribir($event)" value="4">4</button>
+                <button class="btn btn-primary col-3 mb-2" (click)="escribir($event)" value="5">5</button>
+                <button class="btn btn-primary col-3 mb-2" (click)="escribir($event)" value="6">6</button>
+                <button class="btn btn-primary col-3 mb-2" (click)="escribir($event)" value="-">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"/>
+                    </svg>
+                </button>
+                <button class="btn btn-primary col-3 mb-2" (click)="escribir($event)" value="1">1</button>
+                <button class="btn btn-primary col-3 mb-2" (click)="escribir($event)" value="2">2</button>
+                <button class="btn btn-primary col-3 mb-2" (click)="escribir($event)" value="3">3</button>
+                <button class="btn btn-primary col-3 mb-2" (click)="escribir($event)" value="+">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                    </svg>
+                </button>
+                <button class="btn btn-primary col-3 mb-2" (click)="holaMundo()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-half" viewBox="0 0 16 16">
+                        <path d="M8 2.748v11.047c3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                    </svg>
+                </button>
+                <button class="btn btn-primary col-3 mb-2" (click)="escribir($event)" value="0">0</button>
+                <button class="btn btn-primary col-3 mb-2" (click)="escribir($event)" value=".">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                    </svg>
+                </button>
+                <button class="btn btn-primary col-3 mb-2" (click)="resuOperacion($event)" value="{{resultado}}">=</button>
+            </div>
+        </div>
+    </div>
+</div>
